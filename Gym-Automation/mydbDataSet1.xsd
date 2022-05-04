@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="mydbDataSet1" targetNamespace="http://tempuri.org/mydbDataSet1.xsd" xmlns:mstns="http://tempuri.org/mydbDataSet1.xsd" xmlns="http://tempuri.org/mydbDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="mydbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="mydbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Gym_Automation.Properties.Settings.GlobalReference.Default.mydbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="kisi_turuTableAdapter" GeneratorDataComponentClassName="kisi_turuTableAdapter" Name="kisi_turu" UserDataComponentName="kisi_turuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="mydbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Kisi_turu` FROM `kisi_turu`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Kisi_turu" DataSetColumn="Kisi_turu" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="mydbDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="mydbDataSet1" msprop:Generator_UserDSName="mydbDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="kisi_turu" msprop:Generator_TableClassName="kisi_turuDataTable" msprop:Generator_TableVarName="tablekisi_turu" msprop:Generator_TablePropName="kisi_turu" msprop:Generator_RowDeletingName="kisi_turuRowDeleting" msprop:Generator_RowChangingName="kisi_turuRowChanging" msprop:Generator_RowEvHandlerName="kisi_turuRowChangeEventHandler" msprop:Generator_RowDeletedName="kisi_turuRowDeleted" msprop:Generator_UserTableName="kisi_turu" msprop:Generator_RowChangedName="kisi_turuRowChanged" msprop:Generator_RowEvArgName="kisi_turuRowChangeEvent" msprop:Generator_RowClassName="kisi_turuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kisi_turu" msprop:Generator_ColumnVarNameInTable="columnKisi_turu" msprop:Generator_ColumnPropNameInRow="Kisi_turu" msprop:Generator_ColumnPropNameInTable="Kisi_turuColumn" msprop:Generator_UserColumnName="Kisi_turu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
